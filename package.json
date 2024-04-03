@@ -14,8 +14,10 @@
     ]
   },
   "dependencies": {
+    "date-fns": "^3.6.0",
     "drizzle-orm": "^0.30.6",
-    "hono": "^4.2.0"
+    "hono": "^4.2.0",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
