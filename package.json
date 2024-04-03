@@ -1,0 +1,24 @@
+{
+  "type": "module",
+  "module": "src/main.ts",
+  "scripts": {
+    "dev": "bun run --watch --hot --smol .",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write ."
+  },
+  "prettier": {
+    "singleQuote": true,
+    "plugins": [
+      "@trivago/prettier-plugin-sort-imports"
+    ]
+  },
+  "dependencies": {
+    "hono": "^4.2.0"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/bun": "latest",
+    "@types/node": "latest",
+    "prettier": "^3.2.5"
+  }
+}
