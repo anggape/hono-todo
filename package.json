@@ -2,6 +2,7 @@
   "type": "module",
   "module": "src/main.ts",
   "scripts": {
+    "db:generate": "bunx drizzle-kit generate:sqlite --config=src/config/drizzle.ts",
     "dev": "bun run --watch --hot --smol .",
     "format:check": "prettier --check .",
     "format:write": "prettier --write ."
@@ -13,12 +14,14 @@
     ]
   },
   "dependencies": {
+    "drizzle-orm": "^0.30.6",
     "hono": "^4.2.0"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/bun": "latest",
     "@types/node": "latest",
+    "drizzle-kit": "^0.20.14",
     "prettier": "^3.2.5"
   }
 }
